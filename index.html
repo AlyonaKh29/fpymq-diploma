@@ -29,10 +29,7 @@
                     </ul>
                 </nav>  
             </div>
-            <div class="title-text">
-                <h1 class="caption">Блог о творчестве, спорте<br>и образе жизни</h1>
-            </div>
-
+            <h1 class="caption">Блог о творчестве, спорте и образе жизни</h1>
         </div>
     </header>
 <!-- Trends -->
@@ -421,5 +418,38 @@
             <a href="#">Copyright © 2009-2019 City Blog LLC.</a>
         </div>
     </footer>
+    <!--Popup-->
+    <div class="popup popup_hidden">
+        <form class="feedback-form">
+            <h2 class="feedback-form-title">Ваш фидбек</h2>
+            <label class="feedback-select">
+                <span class="feedback-question">Как часто вы заходите на сайт?</span>
+                <select class="select-list">
+                    <option class="select-item">Почти каждый день</option>
+                    <option class="select-item">Раз в несколько дней</option>
+                    <option class="select-item">Раз в несколько недель</option>
+                    <option class="select-item">Несколько раз в год</option>
+                </select>
+            </label>
+            <label class="feedback-radio">
+                <span class="feedback-question">Вы подписаны на e-mail рассылку?</span>
+                <div class="radio-box">
+                    <label class="radio-item">
+                        <input class="radio-input" type="radio" name="choice" checked>
+                        <span>Да</span>
+                    </label>
+                    <label class="radio-item">
+                        <input class="radio-input" type="radio" name="choice">
+                        <span>Нет</span>
+                    </label>
+                </div>  
+            </label>
+            <label class="feedback-textarea">
+                <span class="feedback-question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                <textarea class="textarea-item" name="description" placeholder="Может, больше рецептов?"></textarea>
+            </label>
+            <button class="feedback-send">Отправить</button>
+        </form>
+    </div>
 </body>
 </html>
