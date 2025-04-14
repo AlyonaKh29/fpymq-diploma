@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, p, ul {
     padding: 0;
 }
 
-._hidden {
+.elem_hidden {
     display: none;
 }
 
@@ -112,6 +112,10 @@ h1, h2, h3, h4, h5, p, ul {
     color: #ffffff;
     text-align: center;
     list-style-type: none;
+}
+
+.burger-menu {
+    display: none;
 }
 
 .menu-list-item:hover {
@@ -243,7 +247,7 @@ article h3.trend-title {
 }
 
 .main-content {
-    max-width: 778px;
+    width: 778px;
 }
 
   /* Post List */
@@ -903,7 +907,7 @@ article h3.trend-title {
     background-color: #323232;
 }
 
-.popup_hidden {
+._hidden {
     display: none;
 }
 
@@ -927,6 +931,18 @@ article h3.trend-title {
 
     .menu-list {
         display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    .burger-item {
+        width: 23px;
+        height: 3px;
+        background-color: #ffffff;
     }
 
     .caption {
@@ -953,11 +969,11 @@ article h3.trend-title {
     }
     
     .trends-content {
-        gap: 3px 2px;
+        gap: 3px;
     }
 
     .trends-list-item {
-        width: calc((100% - 2px) / 2);
+        width: calc((100% - 3px) / 2);
         height: 247px;
         padding-right: 18px;
     }
@@ -979,14 +995,38 @@ article h3.trend-title {
     }
 
     .main-aside-content {
-        max-width: 698px;
-        margin: 0 auto;
-        column-gap: 35px;
-        padding: 50px 36px 59px 31px;
+        margin: 0 20px;
+        gap: 35px;
     }
     
     .main-content {
-        max-width: 392px;
+        width: 56%;
+    }
+
+    .aside-content {
+        width: 39%;
+    }
+
+    .search-form {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .search-input {
+        width: calc(100% - 50px);
+        padding-right: 2px;
+    }
+
+    .subscribe-form {
+        width: 100%;
+    }
+
+    .email-input {
+        width: calc(100% - 36px);
+    }
+
+    .subscribe-button {
+        width: 100%;
     }
 
     .post {
@@ -1034,5 +1074,35 @@ article h3.trend-title {
     .post-resume {
         margin-left: 5px;
     }
+
+    .shop {
+        width: calc(100% - 72px);
+        max-width: 698px;
+        padding: 0;
+    }
+
+    .products-container {
+        flex-wrap: wrap;
+        row-gap: 27px;
+    }
+
+    .product{
+        width: calc((100% - 22px)/ 2);
+    }
+
+    .product-image {
+        width: calc(100% - 46px);
+        padding: 0 auto;
+    }
+
+    .shop-title-content {
+        font-size: 18px;
+    }
+
+    .product-name {
+        font-size: 17px;
+    }
+
+
 
 }
