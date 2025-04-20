@@ -32,8 +32,9 @@
                     <div class="burger-item"></div>
                     <div class="burger-item"></div>
                     <div class="burger-item"></div>
-                  </div>  
+                </div>
             </div>
+            <a href="#"><img src="svg/noemi-logo.svg" alt="noemi-logo" class="mobile-logo"></a> 
             <h1 class="caption">Блог о творчестве, спорте и образе жизни</h1>
         </div>
     </header>
@@ -54,7 +55,7 @@
                         </li>
                     </ul>
                     <h3 class="trend-title trend-content-title">
-                        <a href="#">Сейчас в тренде: сад<br>на подоконнике</a>
+                        <a href="#">Сейчас в тренде: сад на подоконнике</a>
                     </h3>
                 </div>
             </article>
@@ -81,7 +82,7 @@
                         </li>
                     </ul>
                     <h3 class="trend-title trend-content-title">
-                        <a href="#">Собираемся в первый<br>поход в горы</a>
+                        <a href="#">Собираемся в первый поход в горы</a>
                     </h3>
                 </div>
             </article>
@@ -96,7 +97,7 @@
                         </li>
                     </ul>
                     <h3 class="trend-title trend-content-title-4">
-                        <a href="#">Сейчас в тренде: сколько<br>витамина C в лимонах?</a>
+                        <a href="#">Сейчас в тренде: сколько витамина C в лимонах?</a>
                     </h3>
                 </div>
             </article>
@@ -208,35 +209,35 @@
                 <h3 class="new-posts-title">Новые посты</h3>
                 <div class="new-posts-conteiner">
                     <div class="new-post">
-                        <img src="images/2.jpg" alt="Рассвет на берегу моря">
+                        <img src="images/2.jpg" alt="Рассвет на берегу моря" class="new-post-image">
                         <div class="new-post-content">
                             <data class="new-post-data" value="">14 июня 2019</data>
                             <p class="new-post-text">10 мест, ради которых стоит проснуться</p>
                         </div>
                     </div>
                     <div class="new-post">
-                        <img src="images/151.jpg" alt="Девушка в асане на берегу моря">
+                        <img src="images/151.jpg" alt="Девушка в асане на берегу моря" class="new-post-image">
                         <div class="new-post-content">
                             <data class="new-post-data" value="">14 июня 2019</data>
                             <p class="new-post-text">Йога для домашних</p>
                         </div>
                     </div>
                     <div class="new-post">
-                        <img src="images/45.jpg" alt="Интерьер балкона">
+                        <img src="images/45.jpg" alt="Интерьер балкона" class="new-post-image">
                         <div class="new-post-content">
                             <data class="new-post-data" value="">14 июня 2019</data>
                             <p class="new-post-text">Как мы превратили классное место в балкон</p>
                         </div>
                     </div>
                     <div class="new-post">
-                        <img src="images/501.jpg" alt="Сервированный стол">
+                        <img src="images/501.jpg" alt="Сервированный стол" class="new-post-image">
                         <div class="new-post-content">
                             <data class="new-post-data" value="">14 июня 2019</data>
                             <p class="new-post-text">Кулинарный подход к науке</p>
                         </div>
                     </div>
                     <div class="new-post">
-                        <img src="images/7.jpg" alt="Девушки с длинными волосами">
+                        <img src="images/7.jpg" alt="Девушки с длинными волосами" class="new-post-image">
                         <div class="new-post-content">
                             <data class="new-post-data" value="">14 июня 2019</data>
                             <p class="new-post-text">Лучшие прически для распущенных волос</p>
@@ -355,8 +356,11 @@
         </div>
         <div class="products-container">
             <article class="product">
-                <picture>
-                    <img src="images/shop-item-desk1.jpg" alt="Изделия: подушка с принтом" class="product-image">
+                <picture class="product-image">
+                    <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+                    <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
+                    <source media="(min-width: 1201px)" srcset="images/shop-item-desk1.jpg">
+                    <img src="images/shop-item-desk1.jpg" alt="Изделия: подушка с принтом" class="product-image-item">
                 </picture>
                 <div class="product-content">
                     <h3 class="product-name">Подушки на диван</h3>
@@ -373,8 +377,11 @@
                 </div>
             </article>
             <article class="product">
-                <picture>
-                    <img src="images/shop-item-desk2.jpg" alt="Изделия: сшитая кукла-зайчик" class="product-image">
+                <picture class="product-image">
+                    <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+                    <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
+                    <source media="(min-width: 1201px)" srcset="images/shop-item-desk2.jpg">
+                    <img src="images/shop-item-desk2.jpg" alt="Изделия: сшитая кукла-зайчик" class="product-image-item">
                 </picture>
                 <div class="product-content">
                     <h3 class="product-name">Кукла «Зайчик»</h3>
@@ -391,8 +398,11 @@
                 </div>
             </article>
             <article class="product">
-                <picture>
-                    <img src="images/shop-item-desk3.jpg" alt="Изделия: шестиугольная рамка" class="product-image">
+                <picture class="product-image">
+                    <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+                    <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
+                    <source media="(min-width: 1201px)" srcset="images/shop-item-desk3.jpg">
+                    <img src="images/shop-item-desk3.jpg" alt="Изделия: шестиугольная рамка" class="product-image-item">
                 </picture>
                 <div class="product-content">
                     <h3 class="product-name">Шестиугольная рамка</h3>
@@ -406,8 +416,8 @@
                             <span class="button-shop-text">В магазин</span>
                         </button>
                     </div>
-                </div>                   
-            </article>
+                </div>
+            </article>                   
         </div>
     </section>
     <!-- Footer -->
@@ -436,7 +446,7 @@
                     <option class="select-item">Несколько раз в год</option>
                 </select>
             </label>
-            <label class="feedback-radio">
+            <div class="feedback-radio">
                 <span class="feedback-question">Вы подписаны на e-mail рассылку?</span>
                 <div class="radio-box">
                     <label class="radio-item">
@@ -448,7 +458,7 @@
                         <span>Нет</span>
                     </label>
                 </div>  
-            </label>
+            </div>
             <label class="feedback-textarea">
                 <span class="feedback-question">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
                 <textarea class="textarea-item" name="description" placeholder="Может, больше рецептов?"></textarea>
